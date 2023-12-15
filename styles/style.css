@@ -1,7 +1,7 @@
 /* место для вашего кода */
 .body {
   box-sizing: border-box;
-  width: 1440px;
+  max-width: 1440px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -10,8 +10,9 @@
 
 .header {
   margin-top: 92px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  justify-items: start;
   align-items: center;
   max-width: 1340px;
   width: 100%;
@@ -42,7 +43,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  font-family: Raleway;
 }
 
 .header__link_active {
@@ -51,7 +51,6 @@
 
 .header__logo {
   justify-self: center;
-  margin-right: 147px;
 }
 
 .header__logo-image {
@@ -62,8 +61,8 @@
 .address {
   width: 240px;
   line-height: 1.35;
-  font-family: Raleway;
   font-size: 18px;
+  justify-self: end;
 }
 
 /*Секция cover*/
@@ -89,7 +88,6 @@
   color: #fff;
   font-size: 100px;
   text-transform: uppercase;
-  font-family: Raleway;
   font-weight: 700;
   letter-spacing: 30px;
   display: flex;
@@ -107,7 +105,6 @@
   align-self: center;
   color: #FFF;
   text-align: center;
-  font-family: Raleway;
   font-size: 100px;
   font-style: normal;
   font-weight: 700;
@@ -138,7 +135,6 @@
 .cover__description-text {
   color: #FFF;
   text-align: center;
-  font-family: Raleway;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -154,7 +150,6 @@
   height: 52px;
   color: #fff;
   text-align: center;
-  font-family: Raleway;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -175,7 +170,6 @@
 
 .lots__heading {
   color: #000;
-  font-family: Raleway;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -224,7 +218,6 @@
 
 .card__title {
   color: #FFF;
-  font-family: Raleway;
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
@@ -238,7 +231,6 @@
 
 .card__text {
   color: #FFF;
-  font-family: Raleway;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -262,7 +254,6 @@
 
 .lots__look-more-link {
   color: #000;
-  font-family: Raleway;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -308,7 +299,6 @@
 
 .about__title {
   color: #000;
-  font-family: Raleway;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -319,7 +309,6 @@
 
 .about__text {
   color: #000;
-  font-family: Raleway;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -359,7 +348,6 @@
 .footer__menu-link {
   color: #000;
   text-align: center;
-  font-family: Raleway;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
